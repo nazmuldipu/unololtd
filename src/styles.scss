@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.css';
 @import '~font-awesome/css/font-awesome.min.css';
+
+@font-face {
+  font-family: 'Source Sans Pro black';
+  src: url('assets/fonts/SourceSansPro-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('assets/fonts/SourceSansPro-Regular.ttf');
+}
+@font-face {
+  font-family: 'Source Sans Pro light';
+  src: url('assets/fonts/SourceSansPro-ExtraLight.ttf');
+}
