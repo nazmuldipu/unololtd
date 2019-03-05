@@ -1,0 +1,40 @@
+:host {
+  padding: 30px 0;
+  background-color: #f3f3f3;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.experience {
+  &-title {
+    color: #0f1214;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  &-row {
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    &-card {
+      border-right: 2px solid #f3f3f3;
+      & img {
+        max-width: 100%;
+        max-height: 100px;
+        padding: 15px 0;
+      }
+      & p {
+        padding: 15px;
+        border-top: 1px solid gray;
+        font-size: 14px;
+        font-weight: 100;
+        text-align: justify;
+      }
+    }
+  }
+}
