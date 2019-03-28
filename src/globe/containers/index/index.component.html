@@ -1,0 +1,438 @@
+<div class="content">
+  <div class="container-box">
+    <nav class="menu">
+      <ul id="menu" class="sf-js-enabled">
+        <li class="about_us" (click)="onNavigate('ABOUT_US')">
+          <a href="#!/page_about">About us</a
+          ><strong style="opacity: 0;"></strong><span style="opacity: 0;"></span
+          ><em style="opacity: 0;"></em>
+          <ul class="submenu_1" style="visibility: visible; display: none;">
+            <li><a href="#!/page_more1">our staff</a></li>
+            <li><a href="#!/page_more1">news</a></li>
+            <li><a href="#!/page_more1">services</a></li>
+          </ul>
+        </li>
+        <li class="our_services">
+          <a href="#!/page_home" (click)="onNavigate('SERVICES')">Services</a>
+          <strong style="opacity: 0;"></strong><span style="opacity: 0;"></span
+          ><em style="opacity: 0;"></em>
+        </li>
+        <li class="our_experience" (click)="onNavigate('OUR_EXPERIENCE')">
+          <a href="#!/page_tours">Our experience</a
+          ><strong style="opacity: 0;"></strong><span style="opacity: 0;"></span
+          ><em style="opacity: 0;"></em>
+        </li>
+        <li class="blog" (click)="onNavigate('BLOG')">
+          <a href="#!/page_hotels">Blog</a><strong style="opacity: 0;"></strong
+          ><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
+        </li>
+        <li class="contacts" (click)="onNavigate('CONTACTS')">
+          <a>Contacts</a><strong style="opacity: 0;"></strong
+          ><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
+        </li>
+        <li class="globe">
+          <img
+            class="globe-image"
+            src="/assets/images/globe.png"
+            alt=""
+            title=""
+          />
+        </li>
+      </ul>
+    </nav>
+    <nav class="menu">
+      <ul class="sf-js-enabled">
+        <li *ngIf="navigate == 'ABOUT_US'" class="info_page about_us_page">
+          <span class="about_us_page-line"></span>
+          <div class="info_page-title">
+            ABOUT US
+          </div>
+        </li>
+        <li *ngIf="navigate == 'SERVICES'" class="info_page our_services_page">
+          <span class="our_services_page-line"></span>
+          <div class="info_page-title">
+            OUR SERVICES
+          </div>
+          <div class="our_services_page-contents">
+            <div class="our_services_page-contents-box">
+              <div class="our_services_page-contents-box-title">
+                Aplication <span> Development </span> and
+                <span> Maintainence </span>
+              </div>
+              <div class="our_services_page-contents-box-text">
+                <div class="our_services_page-contents-box-text-left">
+                  <img
+                    src="/assets/images/fatures/responsive-64.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="our_services_page-contents-box-text-right">
+                  Creating software according to requirement specification in
+                  both enterprise and mid level companies. Making sure that
+                  minor enhancements and change requests are done without
+                  affecting existing functionality.
+                </div>
+              </div>
+            </div>
+            <div class="our_services_page-contents-box">
+              <div class="our_services_page-contents-box-title">
+                <span> Web </span>development
+              </div>
+              <div class="our_services_page-contents-box-text">
+                <div class="our_services_page-contents-box-text-left">
+                  <img
+                    src="/assets/images/fatures/desktop-chart-64.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="our_services_page-contents-box-text-right">
+                  A perfect structure created after we analized trends in SaaS
+                  landing page designs. Analysis made to the most popular SaaS
+                  businesses.
+                </div>
+              </div>
+            </div>
+            <div class="our_services_page-contents-box">
+              <div class="our_services_page-contents-box-title">
+                Mobile<span> Apps</span> development
+              </div>
+              <div class="our_services_page-contents-box-text">
+                <div class="our_services_page-contents-box-text-left">
+                  <img
+                    src="/assets/images/fatures/browser-64.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="our_services_page-contents-box-text-right">
+                  Blocks, Elements and Modifiers. A smart HTML/CSS structure
+                  that can easely be reused. Layout driven by the purpose of
+                  modularity.
+                </div>
+              </div>
+            </div>
+            <div class="our_services_page-contents-box">
+              <div class="our_services_page-contents-box-title">
+                <span>Research </span> and <span>Training </span>Institute
+              </div>
+              <div class="our_services_page-contents-box-text">
+                <div class="our_services_page-contents-box-text-left">
+                  <img
+                    src="/assets/images/fatures/desktop-windows-64.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="our_services_page-contents-box-text-right">
+                  Choose between multiple unique designs and easy integrate
+                  elements from one design to another. Following the latest
+                  design trends.
+                </div>
+              </div>
+            </div>
+            <div class="our_services_page-contents-box">
+              <div class="our_services_page-contents-box-title">
+                <span>SME </span> and <span>SEO</span>
+              </div>
+              <div class="our_services_page-contents-box-text">
+                <div class="our_services_page-contents-box-text-left">
+                  <img
+                    src="/assets/images/fatures/customizer-64.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="our_services_page-contents-box-text-right">
+                  Simple and Smart HTML code that works reintegrated in any part
+                  of the layout. Reuse the elements from one design to another.
+                </div>
+              </div>
+            </div>
+            <div class="our_services_page-contents-box">
+              <div class="our_services_page-contents-box-title">
+                <span>Call</span> center
+              </div>
+              <div class="our_services_page-contents-box-text">
+                <div class="our_services_page-contents-box-text-left">
+                  <img
+                    src="/assets/images/fatures/users-64.png"
+                    alt=""
+                    title=""
+                  />
+                </div>
+                <div class="our_services_page-contents-box-text-right">
+                  Easy to navigate. Made with user experience in mind, in order
+                  to provide the perfect landing page experience for your
+                  client.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info_page-back" (click)="backToMain()">
+            Back to main
+          </div>
+        </li>
+        <li *ngIf="navigate == 'BLOG'" class="info_page order_page">
+          <span class="order_page-line"></span>
+          <div class="info_page-title">
+            OUR BLOGS
+          </div>
+        </li>
+        <li
+          *ngIf="navigate == 'OUR_EXPERIENCE'"
+          class="info_page our_experience_page"
+        >
+          <span class="our_experience_page-line"></span>
+          <div class="info_page-title">
+            OUR EXPERIENCE
+          </div>
+          <div class="our_experience_page-contents">
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/hotelswave.png" alt="" title="" />
+              <p>
+                hotelswave.com is a online hotel booking site. This is first
+                most complete hotel booking site in the world. This site offer
+                all kind of hotel booking/reservation for user and hotel room
+                sales panel for hotel and report genrator.
+                <a href="https://www.hotelswave.com" target="_tab">Link</a>
+              </p>
+            </div>
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/itours.jpg" alt="" title="" />
+              <p>
+                itoursltd.com is known for corporate and international tourism
+                company. itoursltd publish their tour packages, hotdeals and
+                tour image on their website. User is also able to create custom
+                packaes in itoursltd.com.
+                <a href="https://www.itoursltd.com" target="_tab">Link</a>
+              </p>
+            </div>
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/monerbari.png" alt="" title="" />
+              <p>
+                monerbari.com is a online home searching website. User can also
+                request for home shifting, event management, interior design
+                services through their website.
+                <a href="https://www.monerbari.com" target="_tab">Link</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info_page-back" (click)="backToMain()">
+            Back to main
+          </div>
+        </li>
+        <li *ngIf="navigate == 'CONTACTS'" class="info_page contacts_page">
+          <span class="contacts_page-line"></span>
+          <div class="info_page-title">
+            CONTACT INFO
+          </div>
+          <div class="px-1 pt-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0684142907104!2d90.38335587920652!3d23.737618876682617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c80ca23e0d%3A0x8f11a59195a58c5c!2sKhan+Plaza!5e0!3m2!1sen!2sbd!4v1553420430655"
+              width="100%"
+              height="520"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-white text-center">
+            32/1, Khan Plaza, Science Lab, Dhanmondi, Dhaka- 1205
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <div
+      class="info_page contacts_page"
+      [ngClass]="navigate == 'CONTACTS' ? '' : 'd-none'"
+    >
+      <div class="info_page-title">
+        CONTACT INFO
+      </div>
+      <div class="px-1 pt-1">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0684142907104!2d90.38335587920652!3d23.737618876682617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c80ca23e0d%3A0x8f11a59195a58c5c!2sKhan+Plaza!5e0!3m2!1sen!2sbd!4v1553420430655"
+          width="100%"
+          height="520"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="text-white text-center">
+        32/1, Khan Plaza, Science Lab, Dhanmondi, Dhaka- 1205
+      </div>
+    </div> -->
+    <!-- <div *ngIf="navigate == 'BLOG'" class="info_page order_page">
+      <div class="info_page-title">
+        OUR BLOGS
+      </div>
+    </div> -->
+    <!-- <div
+      *ngIf="navigate == 'OUR_EXPERIENCE'"
+      class="info_page our_experience_page"
+    >
+      <div class="info_page-title">
+        OUR EXPERIENCE
+      </div>
+      <div class="our_experience_page-contents">
+        <div class="our_experience_page-contents-box">
+          <img src="/assets/images/hotelswave.png" alt="" title="" />
+          <p>
+            hotelswave.com is a online hotel booking site. This is first most
+            complete hotel booking site in the world. This site offer all kind
+            of hotel booking/reservation for user and hotel room sales panel for
+            hotel and report genrator.
+            <a href="https://www.hotelswave.com" target="_tab">Link</a>
+          </p>
+        </div>
+        <div class="our_experience_page-contents-box">
+          <img src="/assets/images/itours.jpg" alt="" title="" />
+          <p>
+            itoursltd.com is known for corporate and international tourism
+            company. itoursltd publish their tour packages, hotdeals and tour
+            image on their website. User is also able to create custom packaes
+            in itoursltd.com.
+            <a href="https://www.itoursltd.com" target="_tab">more...</a>
+          </p>
+        </div>
+        <div class="our_experience_page-contents-box">
+          <img src="/assets/images/monerbari.png" alt="" title="" />
+          <p>
+            monerbari.com is a online home searching website. User can also
+            request for home shifting, event management, interior design
+            services through their website.
+            <a href="https://www.monerbari.com" target="_tab">more...</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="info_page-back" (click)="backToMain()">
+        Back to main
+      </div>
+    </div> -->
+    <!-- <div *ngIf="navigate == 'SERVICES'" class="info_page our_services_page">
+      <span class="our_services_page-line"></span>
+      <div class="info_page-title">
+        OUR SERVICES
+      </div>
+      <div class="our_services_page-contents">
+        <div class="our_services_page-contents-box">
+          <div class="our_services_page-contents-box-title">
+            Aplication <span> Development </span> and
+            <span> Maintainence </span>
+          </div>
+          <div class="our_services_page-contents-box-text">
+            <div class="our_services_page-contents-box-text-left">
+              <img
+                src="/assets/images/fatures/responsive-64.png"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="our_services_page-contents-box-text-right">
+              Creating software according to requirement specification in both
+              enterprise and mid level companies. Making sure that minor
+              enhancements and change requests are done without affecting
+              existing functionality.
+            </div>
+          </div>
+        </div>
+        <div class="our_services_page-contents-box">
+          <div class="our_services_page-contents-box-title">
+            <span> Web </span>development
+          </div>
+          <div class="our_services_page-contents-box-text">
+            <div class="our_services_page-contents-box-text-left">
+              <img
+                src="/assets/images/fatures/desktop-chart-64.png"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="our_services_page-contents-box-text-right">
+              A perfect structure created after we analized trends in SaaS
+              landing page designs. Analysis made to the most popular SaaS
+              businesses.
+            </div>
+          </div>
+        </div>
+        <div class="our_services_page-contents-box">
+          <div class="our_services_page-contents-box-title">
+            Mobile<span> Apps</span> development
+          </div>
+          <div class="our_services_page-contents-box-text">
+            <div class="our_services_page-contents-box-text-left">
+              <img
+                src="/assets/images/fatures/browser-64.png"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="our_services_page-contents-box-text-right">
+              Blocks, Elements and Modifiers. A smart HTML/CSS structure that
+              can easely be reused. Layout driven by the purpose of modularity.
+            </div>
+          </div>
+        </div>
+        <div class="our_services_page-contents-box">
+          <div class="our_services_page-contents-box-title">
+            <span>Research </span> and <span>Training </span>Institute
+          </div>
+          <div class="our_services_page-contents-box-text">
+            <div class="our_services_page-contents-box-text-left">
+              <img
+                src="/assets/images/fatures/desktop-windows-64.png"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="our_services_page-contents-box-text-right">
+              Choose between multiple unique designs and easy integrate elements
+              from one design to another. Following the latest design trends.
+            </div>
+          </div>
+        </div>
+        <div class="our_services_page-contents-box">
+          <div class="our_services_page-contents-box-title">
+            <span>SME </span> and <span>SEO</span>
+          </div>
+          <div class="our_services_page-contents-box-text">
+            <div class="our_services_page-contents-box-text-left">
+              <img
+                src="/assets/images/fatures/customizer-64.png"
+                alt=""
+                title=""
+              />
+            </div>
+            <div class="our_services_page-contents-box-text-right">
+              Simple and Smart HTML code that works reintegrated in any part of
+              the layout. Reuse the elements from one design to another.
+            </div>
+          </div>
+        </div>
+        <div class="our_services_page-contents-box">
+          <div class="our_services_page-contents-box-title">
+            <span>Call</span> center
+          </div>
+          <div class="our_services_page-contents-box-text">
+            <div class="our_services_page-contents-box-text-left">
+              <img src="/assets/images/fatures/users-64.png" alt="" title="" />
+            </div>
+            <div class="our_services_page-contents-box-text-right">
+              Easy to navigate. Made with user experience in mind, in order to
+              provide the perfect landing page experience for your client.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_page-back" (click)="backToMain()">
+        Back to main
+      </div>
+    </div> -->
+  </div>
+</div>
