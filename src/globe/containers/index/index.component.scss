@@ -1,3 +1,13 @@
+.company-logo {
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 80px;
+  width: auto;
+  &-text {
+    height: 40px;
+    vertical-align: bottom;
+  }
+}
 .content {
   position: relative;
   width: 1440px;
@@ -25,7 +35,7 @@
 .globe {
   width: 200px !important;
   height: 200px !important;
-  top: 60vh;
+  top: 430px;
   left: 200px;
   &-image {
     width: 100%;
@@ -40,27 +50,27 @@
 }
 .about_us {
   left: 0;
-  top: 60vh;
+  top: 450px;
   background: rgba(88, 210, 154, 0.89);
 }
 .our_services {
-  left: 17%;
-  top: 45vh;
+  left: 90px;
+  top: 310px;
   background: rgba(161, 11, 248, 0.89);
 }
 .our_experience {
   left: 240px;
-  top: 37vh;
+  top: 230px;
   background: rgba(161, 11, 248, 0.89);
 }
 .blog {
-  right: 17%;
-  top: 45vh;
+  right: 90px;
+  top: 310px;
   background: rgba(161, 11, 248, 0.89);
 }
 .contacts {
   right: 0;
-  top: 60vh;
+  top: 450px;
   background: rgba(161, 11, 248, 0.89);
 }
 #menu > li {
@@ -277,12 +287,12 @@
     // color: black;
     width: 2px;
     background: gray;
-    height: 40px;
-    left: 379px;
-    top: 25px;
-    -ms-transform: rotate(-80deg); /* IE 9 */
-    -webkit-transform: rotate(-80deg); /* Safari 3-8 */
-    transform: rotate(-80deg);
+    height: 70px;
+    left: 384px;
+    top: -10px;
+    -ms-transform: rotate(-130deg); /* IE 9 */
+    -webkit-transform: rotate(-130deg); /* Safari 3-8 */
+    transform: rotate(-130deg);
   }
 }
 .contacts_page {
@@ -292,12 +302,12 @@
     // color: black;
     width: 2px;
     background: gray;
-    height: 41px;
-    right: 379px;
-    top: 30px;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari 3-8 */
-    transform: rotate(90deg);
+    height: 66px;
+    right: 385px;
+    top: -10px;
+    -ms-transform: rotate(120deg); /* IE 9 */
+    -webkit-transform: rotate(120deg); /* Safari 3-8 */
+    transform: rotate(120deg);
   }
   right: -400px;
   top: 500px;
@@ -310,12 +320,12 @@
     display: inline-block;
     width: 2px;
     background: gray;
-    height: 206px;
-    right: 436px;
+    height: 153px;
+    right: 424px;
     top: 15px;
-    -ms-transform: rotate(50deg); /* IE 9 */
-    -webkit-transform: rotate(50deg); /* Safari 3-8 */
-    transform: rotate(50deg);
+    -ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: rotate(60deg); /* Safari 3-8 */
+    transform: rotate(60deg);
   }
 }
 .our_experience_page {
@@ -327,12 +337,12 @@
     // color: black;
     width: 2px;
     background: gray;
-    height: 390px;
-    right: 506px;
-    top: -15px;
-    -ms-transform: rotate(50deg); /* IE 9 */
-    -webkit-transform: rotate(50deg); /* Safari 3-8 */
-    transform: rotate(50deg);
+    height: 337px;
+    right: 495px;
+    top: -30px;
+    -ms-transform: rotate(55deg); /* IE 9 */
+    -webkit-transform: rotate(55deg); /* Safari 3-8 */
+    transform: rotate(55deg);
   }
   &-contents {
     width: 359px;
@@ -371,12 +381,12 @@
     // color: black;
     width: 2px;
     background: gray;
-    height: 205px;
-    left: 436px;
+    height: 153px;
+    left: 424px;
     top: 15px;
-    -ms-transform: rotate(-50deg); /* IE 9 */
-    -webkit-transform: rotate(-50deg); /* Safari 3-8 */
-    transform: rotate(-50deg);
+    -ms-transform: rotate(-60deg); /* IE 9 */
+    -webkit-transform: rotate(-60deg); /* Safari 3-8 */
+    transform: rotate(-60deg);
   }
   &-contents {
     width: 359px;
