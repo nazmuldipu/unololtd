@@ -8,9 +8,14 @@
     vertical-align: bottom;
   }
 }
+.cont-widht {
+  width: 1440px !important;
+}
 .content {
   position: relative;
-  width: 1440px;
+
+  width: 100%;
+  // max-width: 1440px;
   height: 640px;
   margin: 10px auto;
   z-index: 50;
@@ -24,7 +29,7 @@
 }
 .container-box {
   width: 600px;
-  height: 90vh;
+  height: 640px;
   // overflow-y: scroll;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
@@ -35,7 +40,7 @@
 .globe {
   width: 200px !important;
   height: 200px !important;
-  top: 430px;
+  top: 280px;
   left: 200px;
   &-image {
     width: 100%;
@@ -50,29 +55,34 @@
 }
 .about_us {
   left: 0;
-  top: 450px;
+  top: 300px;
   background: rgba(88, 210, 154, 0.89);
 }
 .our_services {
   left: 90px;
-  top: 310px;
+  top: 160px;
   background: rgba(161, 11, 248, 0.89);
 }
 .our_experience {
   left: 240px;
-  top: 230px;
+  top: 80px;
   background: rgba(161, 11, 248, 0.89);
 }
 .blog {
   right: 90px;
-  top: 310px;
+  top: 160px;
   background: rgba(161, 11, 248, 0.89);
 }
 .contacts {
   right: 0;
-  top: 450px;
+  top: 300px;
   background: rgba(161, 11, 248, 0.89);
 }
+.info {
+  overflow-x: auto;
+  max-width: 1440px;
+}
+
 #menu > li {
   cursor: pointer;
   display: inline-block;
@@ -280,7 +290,7 @@
 
 .about_us_page {
   left: -400px;
-  top: 500px;
+  top: 350px;
   &-line {
     position: absolute;
     display: inline-block;
@@ -310,39 +320,39 @@
     transform: rotate(120deg);
   }
   right: -400px;
-  top: 500px;
+  top: 350px;
 }
 .order_page {
   right: -400px;
-  top: 200px;
+  top: 50px;
   &-line {
     position: absolute;
     display: inline-block;
     width: 2px;
     background: gray;
-    height: 153px;
-    right: 424px;
-    top: 15px;
-    -ms-transform: rotate(60deg); /* IE 9 */
-    -webkit-transform: rotate(60deg); /* Safari 3-8 */
-    transform: rotate(60deg);
+    height: 149px;
+    right: 426px;
+    top: 8px;
+    -ms-transform: rotate(66deg); /* IE 9 */
+    -webkit-transform: rotate(66deg); /* Safari 3-8 */
+    transform: rotate(66deg);
   }
 }
 .our_experience_page {
   right: -370px;
-  top: 0;
+  top: -120px;
   &-line {
     position: absolute;
     display: inline-block;
     // color: black;
     width: 2px;
     background: gray;
-    height: 337px;
-    right: 495px;
+    height: 314px;
+    right: 496px;
     top: -30px;
-    -ms-transform: rotate(55deg); /* IE 9 */
-    -webkit-transform: rotate(55deg); /* Safari 3-8 */
-    transform: rotate(55deg);
+    -ms-transform: rotate(62deg); /* IE 9 */
+    -webkit-transform: rotate(62deg); /* Safari 3-8 */
+    transform: rotate(62deg);
   }
   &-contents {
     width: 359px;
@@ -374,19 +384,20 @@
 }
 .our_services_page {
   left: -400px;
-  top: 200px;
+  // right: 300px;
+  top: 50px;
   &-line {
     position: absolute;
     display: inline-block;
     // color: black;
     width: 2px;
     background: gray;
-    height: 153px;
-    left: 424px;
-    top: 15px;
-    -ms-transform: rotate(-60deg); /* IE 9 */
-    -webkit-transform: rotate(-60deg); /* Safari 3-8 */
-    transform: rotate(-60deg);
+    height: 150px;
+    left: 426px;
+    top: 8px;
+    -ms-transform: rotate(-65deg); /* IE 9 */
+    -webkit-transform: rotate(-65deg); /* Safari 3-8 */
+    transform: rotate(-65deg);
   }
   &-contents {
     width: 359px;

@@ -2,7 +2,7 @@
   <img class="company-logo" src="/assets/images/logo.png" alt="" title="" />
   <span class="company-logo-text">&nbsp; Technology Ltd.</span>
 </div>
-<div class="content">
+<div class="content" [ngClass]="navigate ? 'cont-widht' : ''">
   <div class="container-box">
     <nav class="menu">
       <ul id="menu" class="sf-js-enabled">
@@ -45,7 +45,7 @@
       </ul>
     </nav>
     <nav class="menu">
-      <ul class="sf-js-enabled">
+      <ul class="info">
         <li *ngIf="navigate == 'ABOUT_US'" class="info_page about_us_page">
           <span class="about_us_page-line"></span>
           <div class="info_page-title">
@@ -220,6 +220,52 @@
                 request for home shifting, event management, interior design
                 services through their website.
                 <a href="https://www.monerbari.com" target="_tab">Link</a>
+              </p>
+            </div>
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/therapy.png" alt="" title="" />
+              <p>
+                Monphysiotherapy is physiotherapy management web site. Where
+                patient is able to make an appointment and Physiotherapy centers
+                is also able to maintain recode of theie old and new patients.
+                Moreover, overall accounting system is also added to this
+                system.
+                <a href="https://therapy.moninfotech.com/" target="_tab"
+                  >Link</a
+                >
+              </p>
+            </div>
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/msms.png" alt="" title="" />
+              <p>
+                Academy Uses SMS Gateway (MSMS).SMS services have become much
+                more widely used within schools recently as a highly effective
+                means of communication with parents and carers. Our web-based
+                SMS service, enables schools/ college/ coaching-centers to
+                maintain an address book of parents securely online, and then
+                select a list of recipients to send a simple SMS message to,
+                confirming a pupil’s absence.
+                <a href="https://academy.moninfotech.com/" target="_tab"
+                  >Link</a
+                >
+              </p>
+            </div>
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/isp.png" alt="" title="" />
+              <p>
+                ISP Billing System (IBS) created for Internet service providers
+                and network administrators. It provides many useful functions
+                such as billing, invoicing, central configuration and monitoring
+                of equipment, hotspot billing, client portals, and much more.
+                <a href="https://isp.moninfotech.com/" target="_tab">Link</a>
+              </p>
+            </div>
+            <div class="our_experience_page-contents-box">
+              <img src="/assets/images/logitbd.png" alt="" title="" />
+              <p>
+                Logitbd is a Technology learning platform. Where people will be
+                able to learn programming languages with easy and new paradigm.
+                <a href="https://www.logitbd.com/" target="_tab">Link</a>
               </p>
             </div>
           </div>
