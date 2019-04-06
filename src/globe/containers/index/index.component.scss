@@ -1,3 +1,17 @@
+:host {
+  position: absolute;
+  // font: 11px/18px Arial, sans-serif;
+  // color: #d0d0d0;
+  // text-transform: uppercase;
+  // min-width: 1150px;
+  // min-height: 900px;
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+  // z-index: 1;
+  background: url(/assets/images/bg_piece.png);
+}
+
 .company-logo {
   margin-left: 15px;
   margin-top: 15px;
@@ -5,6 +19,7 @@
   width: auto;
   &-text {
     height: 40px;
+    color: gray;
     vertical-align: bottom;
   }
 }
@@ -56,27 +71,27 @@
 .about_us {
   left: 0;
   top: 300px;
-  background: rgba(88, 210, 154, 0.89);
+  background: rgb(64, 178, 208);
 }
 .our_services {
   left: 90px;
   top: 160px;
-  background: rgba(161, 11, 248, 0.89);
+  background: rgba(88, 210, 154, 0.89);
 }
 .our_experience {
   left: 240px;
   top: 80px;
-  background: rgba(161, 11, 248, 0.89);
+  background: rgb(154, 209, 81);
 }
 .blog {
   right: 90px;
   top: 160px;
-  background: rgba(161, 11, 248, 0.89);
+  background: rgba(253, 151, 67, 0.9);
 }
 .contacts {
   right: 0;
   top: 300px;
-  background: rgba(161, 11, 248, 0.89);
+  background: rgba(226, 212, 48, 0.9);
 }
 .info {
   overflow-x: auto;
@@ -96,8 +111,8 @@
 #menu > li > a {
   position: relative;
   display: block;
-  font: 10px/12px Arial, sans-serif;
-  color: #ff0;
+  font: 12px Arial, sans-serif;
+  color: #fff;
   text-transform: uppercase;
   padding: 45px 0 41px;
   text-align: center;
@@ -183,11 +198,11 @@
   }
   & span {
     height: 80px;
-    left: 100px;
-    top: 80px;
-    -ms-transform: rotate(-39.5deg); /* IE 9 */
-    -webkit-transform: rotate(-39.5deg); /* Safari 3-8 */
-    transform: rotate(-39.5deg);
+    left: 99px;
+    top: 82px;
+    -ms-transform: rotate(-38deg); /* IE 9 */
+    -webkit-transform: rotate(-38deg); /* Safari 3-8 */
+    transform: rotate(-38deg);
   }
 }
 
@@ -236,10 +251,10 @@
   & span {
     height: 63px;
     left: -8px;
-    top: 88px;
-    -ms-transform: rotate(40deg); /* IE 9 */
-    -webkit-transform: rotate(40deg); /* Safari 3-8 */
-    transform: rotate(40deg);
+    top: 90px;
+    -ms-transform: rotate(41deg); /* IE 9 */
+    -webkit-transform: rotate(41deg); /* Safari 3-8 */
+    transform: rotate(41deg);
   }
 }
 .contacts {
@@ -252,12 +267,12 @@
     top: 50px;
   }
   & span {
-    height: 80px;
+    height: 83px;
     left: -50px;
     top: 30px;
-    -ms-transform: rotate(73deg); /* IE 9 */
-    -webkit-transform: rotate(73deg); /* Safari 3-8 */
-    transform: rotate(73deg);
+    -ms-transform: rotate(74deg); /* IE 9 */
+    -webkit-transform: rotate(74deg); /* Safari 3-8 */
+    transform: rotate(74deg);
   }
 }
 .info_page {
@@ -440,3 +455,12 @@
     }
   }
 }
+
+// footer {
+//   position: absolute;
+//   width: 100%;
+//   z-index: 100;
+//   bottom: 0;
+//   height: 69px;
+//   text-align: center;
+// }

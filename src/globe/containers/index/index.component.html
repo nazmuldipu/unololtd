@@ -7,31 +7,29 @@
     <nav class="menu">
       <ul id="menu" class="sf-js-enabled">
         <li class="about_us" (click)="onNavigate('ABOUT_US')">
-          <a href="#!/page_about">About us</a
-          ><strong style="opacity: 0;"></strong><span style="opacity: 0;"></span
-          ><em style="opacity: 0;"></em>
+          <a routeLink="/">About us</a><strong style="opacity: 0;"></strong
+          ><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
           <ul class="submenu_1" style="visibility: visible; display: none;">
             <li><a href="#!/page_more1">our staff</a></li>
             <li><a href="#!/page_more1">news</a></li>
             <li><a href="#!/page_more1">services</a></li>
           </ul>
         </li>
-        <li class="our_services">
-          <a href="#!/page_home" (click)="onNavigate('SERVICES')">Services</a>
+        <li class="our_services" (click)="onNavigate('SERVICES')">
+          <a routeLink="/">Services</a>
           <strong style="opacity: 0;"></strong><span style="opacity: 0;"></span
           ><em style="opacity: 0;"></em>
         </li>
         <li class="our_experience" (click)="onNavigate('OUR_EXPERIENCE')">
-          <a href="#!/page_tours">Our experience</a
-          ><strong style="opacity: 0;"></strong><span style="opacity: 0;"></span
-          ><em style="opacity: 0;"></em>
+          <a routeLink="/">Experiences</a><strong style="opacity: 0;"></strong
+          ><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
         </li>
         <li class="blog" (click)="onNavigate('BLOG')">
-          <a href="#!/page_hotels">Blog</a><strong style="opacity: 0;"></strong
+          <a routeLink="/">Blogs</a><strong style="opacity: 0;"></strong
           ><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
         </li>
         <li class="contacts" (click)="onNavigate('CONTACTS')">
-          <a>Contacts</a><strong style="opacity: 0;"></strong
+          <a routeLink="/">Contact</a><strong style="opacity: 0;"></strong
           ><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
         </li>
         <li class="globe" (click)="backToMain()">
@@ -486,3 +484,9 @@
     </div> -->
   </div>
 </div>
+
+<footer class="footer mt-auto py-3">
+  <div class="container text-center">
+    <span class="text-muted ">UNOLO © 2019</span>
+  </div>
+</footer>
