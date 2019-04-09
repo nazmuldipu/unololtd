@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
   navigate;
+  about_content;
+  location = 'DHAKA';
   constructor() {}
 
   ngOnInit() {}
 
   onNavigate(nav) {
-    console.log(nav);
     this.navigate = nav;
     switch (nav) {
       case 'ABOUT_US':
@@ -32,6 +33,17 @@ export class IndexComponent implements OnInit {
         break;
     }
   }
+
+  onLocation(loc) {
+    this.location = loc;
+  }
+
+  onAboutus(cont) {
+    window.scrollTo(100, 500);
+    this.navigate = 'ABOUT_US';
+    this.about_content = cont;
+  }
+
   backToMain() {
     this.navigate = null;
     window.scrollTo(0, 0);

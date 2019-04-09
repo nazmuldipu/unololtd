@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IndexComponent } from './containers/index/index.component';
 import { GlobeComponent } from './globe.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 export const ROUTES: Routes = [
   {
@@ -19,6 +20,6 @@ export const ROUTES: Routes = [
 
 @NgModule({
   declarations: [IndexComponent, GlobeComponent],
-  imports: [CommonModule, RouterModule.forChild(ROUTES)]
+  imports: [CommonModule, FormsModule, RouterModule.forChild(ROUTES)]
 })
 export class GlobeModule {}

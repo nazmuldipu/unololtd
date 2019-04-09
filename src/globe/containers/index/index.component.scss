@@ -73,6 +73,24 @@
   top: 300px;
   background: rgb(64, 178, 208);
 }
+.about_us_submenu {
+  width: 129px;
+  height: 129px;
+  border-radius: 65px;
+  padding: 20px 0;
+  font-size: 14px;
+  background: rgb(64, 178, 208);
+}
+.about_us_submenu > li {
+  list-style: none;
+  & a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
 .our_services {
   left: 90px;
   top: 160px;
@@ -169,6 +187,13 @@
   transition: all 0.5s ease-in-out 0.5s;
 }
 
+.about_us:hover > ul {
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
 .contacts:hover > strong,
 .contacts:hover > em,
 .contacts:hover > span,
@@ -181,6 +206,7 @@
 .about_us:hover > strong,
 .about_us:hover > em,
 .about_us:hover > span,
+.about_us:hover > ul,
 .our_services:hover > strong,
 .our_services:hover > em,
 .our_services:hover > span {
@@ -319,8 +345,38 @@
     -webkit-transform: rotate(-130deg); /* Safari 3-8 */
     transform: rotate(-130deg);
   }
+  &-contents {
+    width: 359px;
+    height: 550px;
+    overflow: scroll;
+    padding-bottom: 20px;
+    background: rgb(100, 100, 100);
+    &-box {
+      padding: 10px;
+      display: block;
+      font-size: 13px;
+      font-weight: 100;
+      text-align: justify;
+      color: white;
+    }
+  }
 }
 .contacts_page {
+  &-contents {
+    width: 359px;
+    height: 500px;
+    overflow: scroll;
+    padding-bottom: 20px;
+    background: rgb(100, 100, 100);
+    &-box {
+      padding: 10px;
+      display: block;
+      font-size: 13px;
+      font-weight: 100;
+      text-align: justify;
+      color: white;
+    }
+  }
   &-line {
     position: absolute;
     display: inline-block;
