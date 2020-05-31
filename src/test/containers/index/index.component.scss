@@ -31,22 +31,21 @@
     vertical-align: bottom;
   }
 }
-.cont-widht {
-  width: 1440px !important;
-}
+// .cont-widht {
+//   width: 1440px !important;
+// }
 .content {
   width: 100%;
   height: calc(100vh - 110px);
   z-index: 50;
   text-align: center;
 }
+
 .container-box {
   width: 600px;
   height: 450px;
-  // overflow-y: scroll;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
-  // text-align: center;
   margin: auto;
 }
 
@@ -153,7 +152,7 @@
   width: 20px;
   background: blue;
   border-radius: 12px;
-  //TODO: remove following 
+  //TODO: remove following
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -168,7 +167,7 @@
   width: 20px;
   background: black;
   border-radius: 12px;
-  //TODO: remove following 
+  //TODO: remove following
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
   -o-transition: all 0.7s ease-in-out;
@@ -181,7 +180,7 @@
 .our_services > span {
   width: 2px;
   background: gray;
-  //TODO: remove following 
+  //TODO: remove following
   -webkit-transition: all 0.5s ease-in-out 0.5s;
   -moz-transition: all 0.5s ease-in-out 0.5s;
   -o-transition: all 0.5s ease-in-out 0.5s;
@@ -252,7 +251,6 @@
   }
 }
 
-
 .our_experience {
   & strong {
     left: 40px;
@@ -309,10 +307,9 @@
   display: inline-block;
   position: absolute;
   width: 359px;
-  height: 650px;
   background: rgb(77, 77, 77);
   border-radius: 40px;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 
   &-title {
     text-align: center;
@@ -334,8 +331,8 @@
 }
 
 .about_us_page {
-  left: -400px;
-  top: 350px;
+  left: 15px;
+  top: -530px;
   &-line {
     position: absolute;
     display: inline-block;
@@ -365,41 +362,9 @@
     }
   }
 }
-.contacts_page {
-  &-contents {
-    width: 359px;
-    height: 500px;
-    overflow: scroll;
-    padding-bottom: 20px;
-    background: rgb(100, 100, 100);
-    &-box {
-      padding: 10px;
-      display: block;
-      font-size: 13px;
-      font-weight: 100;
-      text-align: justify;
-      color: white;
-    }
-  }
-  &-line {
-    position: absolute;
-    display: inline-block;
-    // color: black;
-    width: 2px;
-    background: gray;
-    height: 66px;
-    right: 385px;
-    top: -10px;
-    -ms-transform: rotate(120deg); /* IE 9 */
-    -webkit-transform: rotate(120deg); /* Safari 3-8 */
-    transform: rotate(120deg);
-  }
-  right: -400px;
-  top: 350px;
-}
-.order_page {
-  right: -400px;
-  top: 50px;
+.blog_page {
+  right: 30px;
+  top: -530px;
   &-line {
     position: absolute;
     display: inline-block;
@@ -414,17 +379,17 @@
   }
 }
 .our_experience_page {
-  right: -370px;
-  top: -120px;
+  right: 45px;
+  top: -530px;
   &-line {
     position: absolute;
     display: inline-block;
     // color: black;
     width: 2px;
     background: gray;
-    height: 314px;
-    right: 496px;
-    top: -30px;
+    height: 150px;
+    right: 424px;
+    top: 0px;
     -ms-transform: rotate(62deg); /* IE 9 */
     -webkit-transform: rotate(62deg); /* Safari 3-8 */
     transform: rotate(62deg);
@@ -457,10 +422,43 @@
     }
   }
 }
+
+.contacts_page {
+  right: 15px;
+  top: -530px;
+  &-contents {
+    width: 359px;
+    height: 500px;
+    overflow: scroll;
+    padding-bottom: 20px;
+    background: rgb(100, 100, 100);
+    &-box {
+      padding: 10px;
+      display: block;
+      font-size: 13px;
+      font-weight: 100;
+      text-align: justify;
+      color: white;
+    }
+  }
+  &-line {
+    position: absolute;
+    display: inline-block;
+    // color: black;
+    width: 2px;
+    background: gray;
+    height: 66px;
+    right: 385px;
+    top: -10px;
+    -ms-transform: rotate(120deg); /* IE 9 */
+    -webkit-transform: rotate(120deg); /* Safari 3-8 */
+    transform: rotate(120deg);
+  }
+}
 .our_services_page {
-  left: -400px;
+  left: 30px;
   // right: 300px;
-  top: 50px;
+  top: -530px;
   &-line {
     position: absolute;
     display: inline-block;
@@ -515,7 +513,7 @@
     }
   }
 }
-.company-footer{
+.company-footer {
   position: relative;
   width: 100%;
   top: 420px;

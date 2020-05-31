@@ -3,6 +3,7 @@
     <span class="company-logo-text">&nbsp; Technology Ltd.</span>
 </div>
 <div class="content" [ngClass]="navigate ? 'cont-widht' : ''">
+
     <div class="container-box">
         <nav class="menu">
             <!-- <div class="testline"></div> -->
@@ -12,16 +13,16 @@
                     <strong style="opacity: 0;"></strong><span style="opacity: 0;"></span><em style="opacity: 0;"></em>
                     <ul class="about_us_submenu" style="opacity: 0;">
                         <li>
-                            <a href="#!/page_more1" (click)="onAboutus('COMPANY OVERVIEW')">Overview</a>
+                            <a (click)="onAboutus('COMPANY OVERVIEW')">Overview</a>
                         </li>
                         <li>
-                            <a href="#!/page_more1" (click)="onAboutus('MISSION')">Mission</a>
+                            <a (click)="onAboutus('MISSION')">Mission</a>
                         </li>
                         <li>
-                            <a href="#!/page_more1" (click)="onAboutus('OUR STRATEGY')">Strategy</a>
+                            <a (click)="onAboutus('OUR STRATEGY')">Strategy</a>
                         </li>
                         <li>
-                            <a href="#!/page_more1" (click)="onAboutus('OUR VALUES')">Values</a>
+                            <a (click)="onAboutus('OUR VALUES')">Values</a>
                         </li>
                     </ul>
                 </li>
@@ -45,344 +46,382 @@
                 <li class="globe" (click)="backToMain()">
                     <img class="globe-image" src="/assets/images/globe.png" alt="" title="" />
                 </li>
-                
+
             </ul>
         </nav>
+
         <div class="text-muted company-footer">UNOLO © 2019</div>
-        <nav class="menu">
-            <ul class="info">
-                <li *ngIf="navigate == 'ABOUT_US'" class="info_page about_us_page">
-                    <span class="about_us_page-line"></span>
-                    <div class="info_page-title">{{ about_content }}</div>
-                    <div class="about_us_page-contents">
-                        <div class="about_us_page-contents-box" *ngIf="about_content == 'COMPANY OVERVIEW'">
-                            <p>
-                                At UNOLO Technology Ltd, we develop innovative and creative
-                                products and services that provide total IT solutions. Among a
-                                plethora of services, web design and development, apps design
-                                and development, hotel/bus/ship/air reservation software,
-                                accounting software, search engine optimization (SEO), social
-                                media marketing, call center, e-commerce solutions,
-                                business-to-business applications, business-to-client
-                                applications, photography, drone video are few that we offer.
-                            </p>
 
-                            <p>
-                                Satisfied clients around the globe bear testimony to the quality
-                                of our work. As a leader in technology exploring, UNOLO is
-                                committed to exporting quality software worldwide.
-                            </p>
-                        </div>
-                        <div class="about_us_page-contents-box" *ngIf="about_content == 'MISSION'">
-                            <p>
-                                To improve business and people’s lives throughout meaningful
-                                innovation
-                            </p>
-                        </div>
-                        <div class="about_us_page-contents-box" *ngIf="about_content == 'OUR STRATEGY'">
-                            <p>
-                                <strong>Assurance:</strong> We design our services keeping
-                                client’s desires as the core attention.
-                            </p>
-                            <p>
-                                <b> Security:</b> We take security as our main concern, we use
-                                high security language like Java. We complete these things in
-                                six steps: 01. Planning; 02. Analysis; 03. Design; 04.
-                                Implementation; 05. Testing & Integration; 06. Maintenance.
-                            </p>
-                            <p>
-                                <b> User Experience:</b> We design our products and services to
-                                meet the high level of user experience. For this purpose, we use
-                                latest technology like Angular.
-                            </p>
-                            <p>
-                                <b> Rational Price:</b> As being a customer friendly
-                                organization, we always provide quality services in a rational
-                                price.
-                            </p>
-                            <p>
-                                <b> Priorities Customer’s Needs:</b> We keep all the
-                                requirements of our clients as a priority and design the service
-                                that best suits with their needs.
-                            </p>
-                        </div>
-                        <div class="about_us_page-contents-box" *ngIf="about_content == 'OUR VALUES'">
-                            <p>
-                                Customer’s Satisfaction: Customers’ ultimate satisfaction is the
-                                asset of our company.
-                            </p>
-                            <p>
-                                Commitment: We understand clients’ attitude and promise to serve
-                                them as a trustworthy organization.
-                            </p>
-                            <p>
-                                Loyalty: We strictly obey the rules and regulations of
-                                government laws serving clients and show our loyalty in this
-                                perspective.
-                            </p>
-                            <p>
-                                Attachment: Treating customers as clients we maintain a true
-                                friendship with them.
-                            </p>
-                            <p>
-                                Reflections: Clients may see their values better reflected in
-                                our services.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="info_page-back" (click)="backToMain()">
-                        Back to main
-                    </div>
-                </li>
-                <li *ngIf="navigate == 'SERVICES'" class="info_page our_services_page">
-                    <span class="our_services_page-line"></span>
-                    <div class="info_page-title">
-                        OUR SERVICES
-                    </div>
-                    <div class="our_services_page-contents">
-                        <div class="our_services_page-contents-box">
-                            <div class="our_services_page-contents-box-title">
-                                Aplication <span> Development </span> and
-                                <span> Maintainence </span>
-                            </div>
-                            <div class="our_services_page-contents-box-text">
-                                <div class="our_services_page-contents-box-text-left">
-                                    <img src="/assets/images/fatures/responsive-64.png" alt="" title="" />
-                                </div>
-                                <div class="our_services_page-contents-box-text-right">
-                                    Creating software according to requirement specification in
-                                    both enterprise and mid level companies. Making sure that
-                                    minor enhancements and change requests are done without
-                                    affecting existing functionality.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our_services_page-contents-box">
-                            <div class="our_services_page-contents-box-title">
-                                <span> Web </span>development
-                            </div>
-                            <div class="our_services_page-contents-box-text">
-                                <div class="our_services_page-contents-box-text-left">
-                                    <img src="/assets/images/fatures/desktop-chart-64.png" alt="" title="" />
-                                </div>
-                                <div class="our_services_page-contents-box-text-right">
-                                    A perfect structure created after we analized trends in SaaS
-                                    landing page designs. Analysis made to the most popular SaaS
-                                    businesses.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our_services_page-contents-box">
-                            <div class="our_services_page-contents-box-title">
-                                Mobile<span> Apps</span> development
-                            </div>
-                            <div class="our_services_page-contents-box-text">
-                                <div class="our_services_page-contents-box-text-left">
-                                    <img src="/assets/images/fatures/browser-64.png" alt="" title="" />
-                                </div>
-                                <div class="our_services_page-contents-box-text-right">
-                                    Blocks, Elements and Modifiers. A smart HTML/CSS structure
-                                    that can easely be reused. Layout driven by the purpose of
-                                    modularity.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our_services_page-contents-box">
-                            <div class="our_services_page-contents-box-title">
-                                <span>Research </span> and <span>Training </span>Institute
-                            </div>
-                            <div class="our_services_page-contents-box-text">
-                                <div class="our_services_page-contents-box-text-left">
-                                    <img src="/assets/images/fatures/desktop-windows-64.png" alt="" title="" />
-                                </div>
-                                <div class="our_services_page-contents-box-text-right">
-                                    Choose between multiple unique designs and easy integrate
-                                    elements from one design to another. Following the latest
-                                    design trends.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our_services_page-contents-box">
-                            <div class="our_services_page-contents-box-title">
-                                <span>SME </span> and <span>SEO</span>
-                            </div>
-                            <div class="our_services_page-contents-box-text">
-                                <div class="our_services_page-contents-box-text-left">
-                                    <img src="/assets/images/fatures/customizer-64.png" alt="" title="" />
-                                </div>
-                                <div class="our_services_page-contents-box-text-right">
-                                    Simple and Smart HTML code that works reintegrated in any part
-                                    of the layout. Reuse the elements from one design to another.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our_services_page-contents-box">
-                            <div class="our_services_page-contents-box-title">
-                                <span>Call</span> center
-                            </div>
-                            <div class="our_services_page-contents-box-text">
-                                <div class="our_services_page-contents-box-text-left">
-                                    <img src="/assets/images/fatures/users-64.png" alt="" title="" />
-                                </div>
-                                <div class="our_services_page-contents-box-text-right">
-                                    Easy to navigate. Made with user experience in mind, in order
-                                    to provide the perfect landing page experience for your
-                                    client.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info_page-back" (click)="backToMain()">
-                        Back to main
-                    </div>
-                </li>
-                <li *ngIf="navigate == 'BLOG'" class="info_page order_page">
-                    <span class="order_page-line"></span>
-                    <div class="info_page-title">
-                        OUR BLOGS
-                    </div>
-                </li>
-                <li *ngIf="navigate == 'OUR_EXPERIENCE'" class="info_page our_experience_page">
-                    <span class="our_experience_page-line"></span>
-                    <div class="info_page-title">
-                        OUR EXPERIENCE
-                    </div>
-                    <div class="our_experience_page-contents">
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/hotelswave.png" alt="" title="" />
-                            <p>
-                                hotelswave.com is a online hotel booking site. This is first
-                                most complete hotel booking site in the world. This site offer
-                                all kind of hotel booking/reservation for user and hotel room
-                                sales panel for hotel and report genrator.
-                                <a href="https://www.hotelswave.com" target="_tab">Link</a>
-                            </p>
-                        </div>
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/itours.jpg" alt="" title="" />
-                            <p>
-                                itoursltd.com is known for corporate and international tourism
-                                company. itoursltd publish their tour packages, hotdeals and
-                                tour image on their website. User is also able to create custom
-                                packaes in itoursltd.com.
-                                <a href="https://www.itoursltd.com" target="_tab">Link</a>
-                            </p>
-                        </div>
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/monerbari.png" alt="" title="" />
-                            <p>
-                                monerbari.com is a online home searching website. User can also
-                                request for home shifting, event management, interior design
-                                services through their website.
-                                <a href="https://www.monerbari.com" target="_tab">Link</a>
-                            </p>
-                        </div>
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/therapy.png" alt="" title="" />
-                            <p>
-                                Monphysiotherapy is physiotherapy management web site. Where
-                                patient is able to make an appointment and Physiotherapy centers
-                                is also able to maintain recode of theie old and new patients.
-                                Moreover, overall accounting system is also added to this
-                                system.
-                                <a href="https://therapy.moninfotech.com/" target="_tab">Link</a>
-                            </p>
-                        </div>
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/msms.png" alt="" title="" />
-                            <p>
-                                Academy Uses SMS Gateway (MSMS).SMS services have become much
-                                more widely used within schools recently as a highly effective
-                                means of communication with parents and carers. Our web-based
-                                SMS service, enables schools/ college/ coaching-centers to
-                                maintain an address book of parents securely online, and then
-                                select a list of recipients to send a simple SMS message to,
-                                confirming a pupil’s absence.
-                                <a href="https://academy.moninfotech.com/" target="_tab">Link</a>
-                            </p>
-                        </div>
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/isp.png" alt="" title="" />
-                            <p>
-                                ISP Billing System (IBS) created for Internet service providers
-                                and network administrators. It provides many useful functions
-                                such as billing, invoicing, central configuration and monitoring
-                                of equipment, hotspot billing, client portals, and much more.
-                                <a href="https://isp.moninfotech.com/" target="_tab">Link</a>
-                            </p>
-                        </div>
-                        <div class="our_experience_page-contents-box">
-                            <img src="/assets/images/logitbd.png" alt="" title="" />
-                            <p>
-                                Logitbd is a Technology learning platform. Where people will be
-                                able to learn programming languages with easy and new paradigm.
-                                <a href="https://www.logitbd.com/" target="_tab">Link</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="info_page-back" (click)="backToMain()">
-                        Back to main
-                    </div>
-                </li>
-                <li *ngIf="navigate == 'CONTACTS'" class="info_page contacts_page">
-                    <span class="contacts_page-line"></span>
-                    <div class="info_page-title">
-                        CONTACT INFO
-                    </div>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" (click)="onLocation('DHAKA')">
-                            DHAKA
-                        </button>
-                        <button type="button" class="btn btn-secondary" (click)="onLocation('GERMANY')">
-                            GERMANY
-                        </button>
-                        <button type="button" class="btn btn-secondary" (click)="onLocation('USA')">
-                            USA
-                        </button>
-                    </div>
-                    <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'DHAKA'">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0684142907104!2d90.38335587920652!3d23.737618876682617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c80ca23e0d%3A0x8f11a59195a58c5c!2sKhan+Plaza!5e0!3m2!1sen!2sbd!4v1553420430655"
-                            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                        <div class="text-white text-center" style="font-size: 14px;">
-                            <i class="fa fa-mobile" aria-hidden="true"></i> +88 01880 005611
-                            <br />
-                            <i class="fa fa-mobile" aria-hidden="true"></i> +88 01840 477717
-                            <br />
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
-                            <br />
-                            32/1, Khan Plaza, Science Lab, Dhanmondi, Dhaka- 1205
-                        </div>
-                    </div>
-
-                    <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'GERMANY'">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.0398305314675!2d9.001440815752947!3d48.68560312081109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799e081161dc8a5%3A0xe205cdda5ab7c9cd!2sWilhelmstra%C3%9Fe+48%2C+71034+B%C3%B6blingen%2C+Germany!5e0!3m2!1sen!2sbd!4v1554797840194!5m2!1sen!2sbd"
-                            width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <div class="text-white text-center" style="font-size: 14px;">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
-                            <br />
-                            Wilhelmstraße 48, 71034 Böblingen, Deutschland
-                        </div>
-                    </div>
-                    <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'USA'">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.722388285227!2d-73.76472708445455!3d40.72412744481014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2619d98443237%3A0xac4cf491f9706a83!2sCunningham+Heights+Apartments!5e0!3m2!1sen!2sbd!4v1554798056235!5m2!1sen!2sbd"
-                            width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <div class="text-white text-center" style="font-size: 14px;">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
-                            <br />
-                            Apt 1B, Queens Village, NY 11427
-                        </div>
-                    </div>
-
-                    <div class="info_page-back" (click)="backToMain()">
-                        Back to main
-                    </div>
-                </li>
-            </ul>
-        </nav>
     </div>
+    <nav class="menu">
+        <ul class="info">
+            <li *ngIf="navigate == 'ABOUT_US'" class="info_page about_us_page">
+                <!-- <span class="about_us_page-line"></span> -->
+                <div class="info_page-title">{{ about_content }}</div>
+                <div class="about_us_page-contents">
+                  <div
+                    class="about_us_page-contents-box"
+                    *ngIf="about_content == 'COMPANY OVERVIEW'"
+                  >
+                    <p>
+                      At UNOLO Technology Ltd, we develop innovative and creative
+                      products and services that provide total IT solutions. Among a
+                      plethora of services, web design and development, apps design
+                      and development, hotel/bus/ship/air reservation software,
+                      accounting software, search engine optimization (SEO), social
+                      media marketing, call center, e-commerce solutions,
+                      business-to-business applications, business-to-client
+                      applications, photography, drone video are few that we offer.
+                    </p>
+      
+                    <p>
+                      Satisfied clients around the globe bear testimony to the quality
+                      of our work. As a leader in technology exploring, UNOLO is
+                      committed to exporting quality software worldwide.
+                    </p>
+                  </div>
+                  <div
+                    class="about_us_page-contents-box"
+                    *ngIf="about_content == 'MISSION'"
+                  >
+                    <p>
+                      To improve business and people’s lives throughout meaningful
+                      innovation
+                    </p>
+                  </div>
+                  <div
+                    class="about_us_page-contents-box"
+                    *ngIf="about_content == 'OUR STRATEGY'"
+                  >
+                    <p>
+                      <strong>Assurance:</strong> We design our services keeping
+                      client’s desires as the core attention.
+                    </p>
+                    <p>
+                      <b> Security:</b> We take security as our main concern, we use
+                      high security language like Java. We complete these things in
+                      six steps: 01. Planning; 02. Analysis; 03. Design; 04.
+                      Implementation; 05. Testing & Integration; 06. Maintenance.
+                    </p>
+                    <p>
+                      <b> User Experience:</b> We design our products and services to
+                      meet the high level of user experience. For this purpose, we use
+                      latest technology like Angular.
+                    </p>
+                    <p>
+                      <b> Rational Price:</b> As being a customer friendly
+                      organization, we always provide quality services in a rational
+                      price.
+                    </p>
+                    <p>
+                      <b> Priorities Customer’s Needs:</b> We keep all the
+                      requirements of our clients as a priority and design the service
+                      that best suits with their needs.
+                    </p>
+                  </div>
+                  <div
+                    class="about_us_page-contents-box"
+                    *ngIf="about_content == 'OUR VALUES'"
+                  >
+                    <p>
+                      Customer’s Satisfaction: Customers’ ultimate satisfaction is the
+                      asset of our company.
+                    </p>
+                    <p>
+                      Commitment: We understand clients’ attitude and promise to serve
+                      them as a trustworthy organization.
+                    </p>
+                    <p>
+                      Loyalty: We strictly obey the rules and regulations of
+                      government laws serving clients and show our loyalty in this
+                      perspective.
+                    </p>
+                    <p>
+                      Attachment: Treating customers as clients we maintain a true
+                      friendship with them.
+                    </p>
+                    <p>
+                      Reflections: Clients may see their values better reflected in
+                      our services.
+                    </p>
+                  </div>
+                </div>
+                <div class="info_page-back" (click)="backToMain()">
+                  Back to main
+                </div>
+              </li>
+            <li *ngIf="navigate == 'SERVICES'" class="info_page our_services_page">
+                <!-- <span class="our_services_page-line"></span> -->
+                <div class="info_page-title">
+                  OUR SERVICES
+                </div>
+                <div class="our_services_page-contents">
+                  <div class="our_services_page-contents-box">
+                    <div class="our_services_page-contents-box-title">
+                      Aplication <span> Development </span> and
+                      <span> Maintainence </span>
+                    </div>
+                    <div class="our_services_page-contents-box-text">
+                      <div class="our_services_page-contents-box-text-left">
+                        <img
+                          src="/assets/images/fatures/responsive-64.png"
+                          alt=""
+                          title=""
+                        />
+                      </div>
+                      <div class="our_services_page-contents-box-text-right">
+                        Creating software according to requirement specification in
+                        both enterprise and mid level companies. Making sure that
+                        minor enhancements and change requests are done without
+                        affecting existing functionality.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our_services_page-contents-box">
+                    <div class="our_services_page-contents-box-title">
+                      <span> Web </span>development
+                    </div>
+                    <div class="our_services_page-contents-box-text">
+                      <div class="our_services_page-contents-box-text-left">
+                        <img
+                          src="/assets/images/fatures/desktop-chart-64.png"
+                          alt=""
+                          title=""
+                        />
+                      </div>
+                      <div class="our_services_page-contents-box-text-right">
+                        A perfect structure created after we analized trends in SaaS
+                        landing page designs. Analysis made to the most popular SaaS
+                        businesses.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our_services_page-contents-box">
+                    <div class="our_services_page-contents-box-title">
+                      Mobile<span> Apps</span> development
+                    </div>
+                    <div class="our_services_page-contents-box-text">
+                      <div class="our_services_page-contents-box-text-left">
+                        <img
+                          src="/assets/images/fatures/browser-64.png"
+                          alt=""
+                          title=""
+                        />
+                      </div>
+                      <div class="our_services_page-contents-box-text-right">
+                        Blocks, Elements and Modifiers. A smart HTML/CSS structure
+                        that can easely be reused. Layout driven by the purpose of
+                        modularity.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our_services_page-contents-box">
+                    <div class="our_services_page-contents-box-title">
+                      <span>Research </span> and <span>Training </span>Institute
+                    </div>
+                    <div class="our_services_page-contents-box-text">
+                      <div class="our_services_page-contents-box-text-left">
+                        <img
+                          src="/assets/images/fatures/desktop-windows-64.png"
+                          alt=""
+                          title=""
+                        />
+                      </div>
+                      <div class="our_services_page-contents-box-text-right">
+                        Choose between multiple unique designs and easy integrate
+                        elements from one design to another. Following the latest
+                        design trends.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our_services_page-contents-box">
+                    <div class="our_services_page-contents-box-title">
+                      <span>SME </span> and <span>SEO</span>
+                    </div>
+                    <div class="our_services_page-contents-box-text">
+                      <div class="our_services_page-contents-box-text-left">
+                        <img
+                          src="/assets/images/fatures/customizer-64.png"
+                          alt=""
+                          title=""
+                        />
+                      </div>
+                      <div class="our_services_page-contents-box-text-right">
+                        Simple and Smart HTML code that works reintegrated in any part
+                        of the layout. Reuse the elements from one design to another.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our_services_page-contents-box">
+                    <div class="our_services_page-contents-box-title">
+                      <span>Call</span> center
+                    </div>
+                    <div class="our_services_page-contents-box-text">
+                      <div class="our_services_page-contents-box-text-left">
+                        <img
+                          src="/assets/images/fatures/users-64.png"
+                          alt=""
+                          title=""
+                        />
+                      </div>
+                      <div class="our_services_page-contents-box-text-right">
+                        Easy to navigate. Made with user experience in mind, in order
+                        to provide the perfect landing page experience for your
+                        client.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info_page-back" (click)="backToMain()">
+                  Back to main
+                </div>
+              </li>
+            <li *ngIf="navigate == 'OUR_EXPERIENCE'" class="info_page our_experience_page">
+                <!-- <span class="our_experience_page-line"></span> -->
+                <div class="info_page-title">
+                    OUR EXPERIENCEF
+                </div>
+                <div class="our_experience_page-contents">
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/hotelswave.png" alt="" title="" />
+                        <p>
+                            hotelswave.com is a online hotel booking site. This is first
+                            most complete hotel booking site in the world. This site offer
+                            all kind of hotel booking/reservation for user and hotel room
+                            sales panel for hotel and report genrator.
+                            <a href="https://www.hotelswave.com" target="_tab">Link</a>
+                        </p>
+                    </div>
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/itours.jpg" alt="" title="" />
+                        <p>
+                            itoursltd.com is known for corporate and international tourism
+                            company. itoursltd publish their tour packages, hotdeals and
+                            tour image on their website. User is also able to create custom
+                            packaes in itoursltd.com.
+                            <a href="https://www.itoursltd.com" target="_tab">Link</a>
+                        </p>
+                    </div>
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/monerbari.png" alt="" title="" />
+                        <p>
+                            monerbari.com is a online home searching website. User can also
+                            request for home shifting, event management, interior design
+                            services through their website.
+                            <a href="https://www.monerbari.com" target="_tab">Link</a>
+                        </p>
+                    </div>
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/therapy.png" alt="" title="" />
+                        <p>
+                            Monphysiotherapy is physiotherapy management web site. Where
+                            patient is able to make an appointment and Physiotherapy centers
+                            is also able to maintain recode of theie old and new patients.
+                            Moreover, overall accounting system is also added to this
+                            system.
+                            <a href="https://therapy.moninfotech.com/" target="_tab">Link</a>
+                        </p>
+                    </div>
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/msms.png" alt="" title="" />
+                        <p>
+                            Academy Uses SMS Gateway (MSMS).SMS services have become much
+                            more widely used within schools recently as a highly effective
+                            means of communication with parents and carers. Our web-based
+                            SMS service, enables schools/ college/ coaching-centers to
+                            maintain an address book of parents securely online, and then
+                            select a list of recipients to send a simple SMS message to,
+                            confirming a pupil’s absence.
+                            <a href="https://academy.moninfotech.com/" target="_tab">Link</a>
+                        </p>
+                    </div>
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/isp.png" alt="" title="" />
+                        <p>
+                            ISP Billing System (IBS) created for Internet service providers
+                            and network administrators. It provides many useful functions
+                            such as billing, invoicing, central configuration and monitoring
+                            of equipment, hotspot billing, client portals, and much more.
+                            <a href="https://isp.moninfotech.com/" target="_tab">Link</a>
+                        </p>
+                    </div>
+                    <div class="our_experience_page-contents-box">
+                        <img src="/assets/images/logitbd.png" alt="" title="" />
+                        <p>
+                            Logitbd is a Technology learning platform. Where people will be
+                            able to learn programming languages with easy and new paradigm.
+                            <a href="https://www.logitbd.com/" target="_tab">Link</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info_page-back" (click)="backToMain()">
+                    Back to main
+                </div>
+            </li>
+            <li *ngIf="navigate == 'CONTACTS'" class="info_page contacts_page">
+                <!-- <span class="contacts_page-line"></span> -->
+                <div class="info_page-title">
+                    CONTACT INFO
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" (click)="onLocation('DHAKA')">
+                        DHAKA
+                    </button>
+                    <button type="button" class="btn btn-secondary" (click)="onLocation('GERMANY')">
+                        GERMANY
+                    </button>
+                    <button type="button" class="btn btn-secondary" (click)="onLocation('USA')">
+                        USA
+                    </button>
+                </div>
+                <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'DHAKA'">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0684142907104!2d90.38335587920652!3d23.737618876682617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c80ca23e0d%3A0x8f11a59195a58c5c!2sKhan+Plaza!5e0!3m2!1sen!2sbd!4v1553420430655"
+                        width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <div class="text-white text-center" style="font-size: 14px;">
+                        <i class="fa fa-mobile" aria-hidden="true"></i> +88 01880 005611
+                        <br />
+                        <i class="fa fa-mobile" aria-hidden="true"></i> +88 01840 477717
+                        <br />
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
+                        <br />
+                        32/1, Khan Plaza, Science Lab, Dhanmondi, Dhaka- 1205
+                    </div>
+                </div>
+
+                <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'GERMANY'">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.0398305314675!2d9.001440815752947!3d48.68560312081109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799e081161dc8a5%3A0xe205cdda5ab7c9cd!2sWilhelmstra%C3%9Fe+48%2C+71034+B%C3%B6blingen%2C+Germany!5e0!3m2!1sen!2sbd!4v1554797840194!5m2!1sen!2sbd"
+                        width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="text-white text-center" style="font-size: 14px;">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
+                        <br />
+                        Wilhelmstraße 48, 71034 Böblingen, Deutschland
+                    </div>
+                </div>
+                <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'USA'">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.722388285227!2d-73.76472708445455!3d40.72412744481014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2619d98443237%3A0xac4cf491f9706a83!2sCunningham+Heights+Apartments!5e0!3m2!1sen!2sbd!4v1554798056235!5m2!1sen!2sbd"
+                        width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="text-white text-center" style="font-size: 14px;">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
+                        <br />
+                        Apt 1B, Queens Village, NY 11427
+                    </div>
+                </div>
+
+                <div class="info_page-back" (click)="backToMain()">
+                    Back to main
+                </div>
+            </li>
+            <li *ngIf="navigate == 'BLOG'" class="info_page blog_page">
+                <span class="order_page-line"></span>
+                <div class="info_page-title">
+                    OUR BLOGS
+                </div>
+            </li>
+        </ul>
+    </nav>
 </div>
