@@ -17,19 +17,19 @@ export class IndexComponent implements OnInit {
     this.navigate = nav;
     switch (nav) {
       case 'ABOUT_US':
-        window.scrollTo(100, 500);
+        // window.scrollTo(100, 500);
         break;
       case 'SERVICES':
-        window.scrollTo(30, 200);
+        // window.scrollTo(30, 200);
         break;
       case 'OUR_EXPERIENCE':
-        window.scrollTo(300, 500);
+        // window.scrollTo(300, 500);
         break;
       case 'BLOG':
-        window.scrollTo(300, 500);
+        // window.scrollTo(300, 500);
         break;
       case 'CONTACTS':
-        window.scrollTo(300, 500);
+        // window.scrollTo(300, 500);
         break;
     }
   }
@@ -39,7 +39,7 @@ export class IndexComponent implements OnInit {
   }
 
   onAboutus(cont) {
-    window.scrollTo(100, 500);
+    // window.scrollT o(100, 500);
     this.navigate = 'ABOUT_US';
     this.about_content = cont;
   }
