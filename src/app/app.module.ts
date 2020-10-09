@@ -10,15 +10,15 @@ import { IndexComponent } from '../home/containers/index/index.component';
 export const ROUTES: Routes = [
   {
     path: 'home',
-    loadChildren: '../home/home.module#HomeModule'
+    loadChildren: () => import('../home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'test',
-    loadChildren: '../test/test.module#TestModule'
+    loadChildren: () => import('../test/test.module').then(m => m.TestModule)
   },
   {
     path: '',
-    loadChildren: '../globe/globe.module#GlobeModule'
+    loadChildren: () => import('../globe/globe.module').then(m => m.GlobeModule)
   }
 ];
 
