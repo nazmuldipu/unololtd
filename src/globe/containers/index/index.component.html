@@ -257,13 +257,10 @@
             </p>
           </div>
           <div class="our_experience_page-contents-box">
-            <img src="/assets/images/itours.jpg" alt="" title="" />
+            <img src="/assets/images/imart.jpg" alt="" title="" />
             <p>
-              itoursltd.com is known for corporate and international tourism
-              company. itoursltd publish their tour packages, hotdeals and
-              tour image on their website. User is also able to create custom
-              packaes in itoursltd.com.
-              <a href="https://www.itoursltd.com" target="_tab">Link</a>
+              imart.com is a online organic shop. Where people can buy product with 100% granted organic.
+              <a href="https://www.imartltd.com" target="_tab">Link</a>
             </p>
           </div>
           <div class="our_experience_page-contents-box">
@@ -283,7 +280,23 @@
               is also able to maintain recode of theie old and new patients.
               Moreover, overall accounting system is also added to this
               system.
-              <a href="https://therapy.moninfotech.com/" target="_tab">Link</a>
+              <a href="https://therapy.unololtd.com/" target="_tab">Link</a>
+            </p>
+          </div>
+          <div class="our_experience_page-contents-box">
+            <img src="/assets/images/wada.png" alt="" title="" />
+            <p>
+              Wada is a online e-commerce company, where people can buy products with
+              100% trusted and quality with minimum price in market.
+              <a href="https://www.wada.com.bd/" target="_tab">Link</a>
+            </p>
+          </div>
+          <div class="our_experience_page-contents-box">
+            <img src="/assets/images/ita.jpg" alt="" title="" />
+            <p>
+              ITA is known for corporate and international tourism company. itoursltd publish their tour packages,
+              hotdeals and tour image on their website. User is also able to create custom packaes in itoursltd.com.
+              <a href="https://www.ita.com.bd/" target="_tab">Link</a>
             </p>
           </div>
           <div class="our_experience_page-contents-box">
@@ -296,7 +309,7 @@
               maintain an address book of parents securely online, and then
               select a list of recipients to send a simple SMS message to,
               confirming a pupil’s absence.
-              <a href="https://academy.moninfotech.com/" target="_tab">Link</a>
+              <a href="https://academy.unololtd.com/" target="_tab">Link</a>
             </p>
           </div>
           <div class="our_experience_page-contents-box">
@@ -306,7 +319,7 @@
               and network administrators. It provides many useful functions
               such as billing, invoicing, central configuration and monitoring
               of equipment, hotspot billing, client portals, and much more.
-              <a href="https://isp.moninfotech.com/" target="_tab">Link</a>
+              <a href="https://isp.unololtd.com/" target="_tab">Link</a>
             </p>
           </div>
           <div class="our_experience_page-contents-box">
@@ -341,8 +354,9 @@
         </div>
         <div class="px-1 pt-1 contacts_page-contents" *ngIf="location == 'DHAKA'">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0684142907104!2d90.38335587920652!3d23.737618876682617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c80ca23e0d%3A0x8f11a59195a58c5c!2sKhan+Plaza!5e0!3m2!1sen!2sbd!4v1553420430655"
-            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0576361314625!2d90.38867972922259!3d23.739156826668065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b94ea98c1ab1%3A0x85b8ebef67fdc42b!2sTropical%20Centre%20Shopping%20Mall!5e0!3m2!1sen!2sbd!4v1602263341452!5m2!1sen!2sbd"
+            width="100%" height="385" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
 
           <div class="text-white text-center" style="font-size: 14px;">
             <i class="fa fa-mobile" aria-hidden="true"></i> +88 01880 005611
@@ -351,7 +365,7 @@
             <br />
             <i class="fa fa-envelope-o" aria-hidden="true"></i> info@unolo.com
             <br />
-            32/1, Khan Plaza, Science Lab, Dhanmondi, Dhaka- 1205
+            Sahera Tropical Centre, Suite # 4 Level # 12, 218 New Elephant Rd, Dhaka 1205
           </div>
         </div>
 
@@ -384,6 +398,27 @@
         <!-- <span class="order_page-line"></span> -->
         <div class="info_page-title">
           OUR PRODUCTS
+        </div>
+        <div class="products_page_contents">
+
+          <div class="products_page_contents_box" *ngFor="let prod of products">
+            <div class="products_page_contents_box_title">
+              <span>{{prod.name}}</span> {{prod.sub_name}}
+            </div>
+            <div class="products_page_contents_box_text">
+              <div class="products_page_contents_box_text_left">
+                <img [src]="prod.image" alt="" title="" />
+              </div>
+              <div class="products_page_contents_box_text_right">
+                {{prod.dialog}} <a [routerLink]="prod.link">Product list</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="info_page-back" (click)="backToMain()">
+          Back to main
         </div>
       </li>
     </ul>

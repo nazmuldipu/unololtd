@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductList } from '../../../shared/data/products.data';
 
 @Component({
   selector: 'app-index',
@@ -6,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
+  products = ProductList;
+
   navigate;
   about_content;
   location = 'DHAKA';
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   onNavigate(nav) {
     this.navigate = nav;

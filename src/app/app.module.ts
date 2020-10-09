@@ -17,6 +17,10 @@ export const ROUTES: Routes = [
     loadChildren: () => import('../test/test.module').then(m => m.TestModule)
   },
   {
+    path: 'products',
+    loadChildren: () => import('../products/products.module').then(m => m.ProductsModule)
+  },
+  {
     path: '',
     loadChildren: () => import('../globe/globe.module').then(m => m.GlobeModule)
   }
@@ -28,4 +32,4 @@ export const ROUTES: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
