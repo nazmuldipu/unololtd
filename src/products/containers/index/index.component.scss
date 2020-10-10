@@ -1,0 +1,23 @@
+.col-left,
+.col-right {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-left {
+  flex: 0 0 220px;
+  max-width: 220px;
+}
+
+.col-right {
+  flex: 0 0 calc(100% - 220px);
+  max-width: calc(100% - 220px);
+}
+
+
+.list-group-item {
+  cursor: pointer;
+  padding: 5px 10px;
+}

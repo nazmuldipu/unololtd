@@ -1,1 +1,17 @@
-<p>index works!</p>
+<product-navbar></product-navbar>
+<div class="container">
+  <div class="row">
+
+    <div class="col-left">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let cat of categoryList" [class.active]="category == cat.slug"
+          (click)="onCategorySelect(cat.slug)">{{cat.name}}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-right">
+      prod {{category}}
+    </div>
+  </div>
+</div>

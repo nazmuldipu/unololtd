@@ -401,16 +401,16 @@
         </div>
         <div class="products_page_contents">
 
-          <div class="products_page_contents_box" *ngFor="let prod of products">
+          <div class="products_page_contents_box" *ngFor="let cat of categories">
             <div class="products_page_contents_box_title">
-              <span>{{prod.name}}</span> {{prod.sub_name}}
+              <span>{{cat.name}}</span> {{cat.sub_name}}
             </div>
             <div class="products_page_contents_box_text">
               <div class="products_page_contents_box_text_left">
-                <img [src]="prod.image" alt="" title="" />
+                <img [src]="cat.image" alt="" title="" />
               </div>
               <div class="products_page_contents_box_text_right">
-                {{prod.dialog}} <a [routerLink]="prod.link">Product list</a>
+                {{cat.dialog}} <a [routerLink]="cat.link">Product list</a>
               </div>
             </div>
           </div>
