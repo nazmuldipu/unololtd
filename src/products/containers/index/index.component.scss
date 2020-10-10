@@ -21,3 +21,15 @@
   cursor: pointer;
   padding: 5px 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .col-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

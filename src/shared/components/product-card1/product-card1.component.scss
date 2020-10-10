@@ -1,0 +1,11 @@
+.product {
+  &-image {
+    width: 100%;
+    max-height: 280px;
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
