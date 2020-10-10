@@ -3,6 +3,7 @@
     width: 100%;
     height: inherit;
   }
+
   .company-logo {
     margin-left: 5px;
     margin-top: 5px;
@@ -15,46 +16,53 @@
     top: calc(100vh / 2 - 80px);
     left: calc(100vw / 2 - 50px);
   }
-  .our_experience {
+
+  .products {
     left: calc(100vw / 2 - 35px);
     top: calc(100vh / 2 - 100vw / 2 - 25px);
   }
+
   .our_services {
     left: calc(100vw / 4 - 30px);
     top: calc(100vh / 2 - 100vw / 3 - 45px);
   }
-  .blog {
+
+  .our_experience {
     right: calc(100vw / 4 - 30px);
     top: calc(100vh / 2 - 100vw / 3 - 45px);
   }
+
   .about_us {
     left: 5px;
     top: calc(100vh / 2 - 100px);
   }
+
   .contacts {
     right: 5px;
     top: calc(100vh / 2 - 100px);
   }
 
-  #menu > li {
+  #menu>li {
     width: 70px;
     height: 70px;
     border-radius: 35px;
     -moz-border-radius: 35px;
     -webkit-border-radius: 35px;
   }
-  #menu > li > a {
+
+  #menu>li>a {
     padding: 30px 0 20px;
   }
-  #menu > li > strong,
-  #menu > li > span,
-  #menu > li > em {
+
+  #menu>li>strong,
+  #menu>li>span,
+  #menu>li>em {
     display: none;
   }
 
-  .our_experience_page,
+  .products_page,
   .our_services_page,
-  .blog_page,
+  .our_experience_page,
   .about_us_page,
   .contacts_page {
     left: 5px;

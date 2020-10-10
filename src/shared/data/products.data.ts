@@ -1,3 +1,27 @@
+export const ProductList = [
+    {
+        name: 'Apple iMac 21.5-inch Full HD Retina Display, Core i5 7th Gen, 8GB RAM, 256GB SSD (MHK03ZP/A)',
+        slug: 'imac21_5',
+        category: 'desktop',
+        price: 130000,
+        image: '/assets/images/products/imac21_5.jpg'
+    },
+    {
+        name: 'Dell Optiplex 3060MT Core i3 8th Gen Brand PC',
+        slug: 'dell_3060',
+        category: 'desktop',
+        price: 35300,
+        image: '/assets/images/products/dell_3060.jpg'
+    },
+    {
+        name: 'i-Life ZED PC CX3 21.5″ HD Core i3 All in One PC with Genuine Windows 10',
+        slug: 'i_life',
+        category: 'desktop',
+        price: 42500,
+        image: '/assets/images/products/i_life.jpg'
+    },
+]
+
 export const ProductCategoryList = [
     {
         name: 'Desktop',
